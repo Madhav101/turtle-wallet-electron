@@ -2,10 +2,10 @@ var config = {};
 
 // self explanatory, your application name, descriptions, etc
 config.appName = 'WalletShell';
-config.appDescription = 'TurtleCoin Wallet';
+config.appDescription = 'Democoin Wallet';
 config.appSlogan = 'Slow and steady wins the race!';
-config.appId = 'lol.turtlecoin.walletshell';
-config.appGitRepo = 'https://github.com/turtlecoin/turtle-wallet-electron';
+config.appId = 'lol.demo.walletshell';
+config.appGitRepo = '';
 
 // default port number for your daemon (e.g. TurtleCoind)
 config.daemonDefaultRpcPort = 11898;
@@ -28,36 +28,35 @@ config.walletServiceConfigFormat = "json";
 config.walletServiceRpcPort = 8070;
 
 // block explorer url, the [[TX_HASH]] will be substituted w/ actual transaction hash
-config.blockExplorerUrl = 'https://explorer.turtlecoin.lol/transaction.html?hash=[[TX_HASH]]';
+config.blockExplorerUrl = 'http://137.135.99.203/transaction.html?hash=[[TX_HASH]]';
 
 // default remote node to connect to, set this to a known reliable node for 'just works' user experience
-config.remoteNodeDefaultHost = 'turtlenode.co';
+config.remoteNodeDefaultHost = '137.135.99.203';
 
 
 // remote node list update url, set to null if you don't have one
 // for TRTL:
 // raw list: https://raw.githubusercontent.com/turtlecoin/turtlecoin-nodes-json/master/turtlecoin-nodes.json
 // filtered: https://trtl.nodes.pub/api/getNodes
-config.remoteNodeListUpdateUrl = 'https://trtl.nodes.pub/api/getNodes';
+config.remoteNodeListUpdateUrl = '';
 
 // set to false if using raw/unfiltered node list
 config.remoteNodeListFiltered = true;
 
 // fallback remote node list, in case fetching update failed, fill this with known to works remote nodes
 config.remoteNodeListFallback = [
-  'turtlenode.co:11898',
-  'nodes.hashvault.pro:11898',
-  'turtle.mine.nu:11898',
+  '137.135.99.203:11898'
+ 
 ];
 
 // your currency name
-config.assetName = 'TurtleCoin';
+config.assetName = 'DemoCoin';
 // your currency ticker
-config.assetTicker = 'TRTL';
+config.assetTicker = 'DM';
 // your currency address prefix, for address validation
-config.addressPrefix = 'TRTL';
+config.addressPrefix = 'DM';
 // standard wallet address length, for address validation
-config.addressLength = 99;
+config.addressLength = 97;
 // integrated wallet address length, for address validation. Added length is length of payment ID encoded in base58.
 config.integratedAddressLength = config.addressLength + ((64 * 11) / 8);
 
