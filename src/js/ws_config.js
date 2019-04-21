@@ -56,7 +56,7 @@ config.assetTicker = 'DM';
 // your currency address prefix, for address validation
 config.addressPrefix = 'DM';
 // standard wallet address length, for address validation
-config.addressLength = 97;
+config.addressLength = 98;
 // integrated wallet address length, for address validation. Added length is length of payment ID encoded in base58.
 config.integratedAddressLength = config.addressLength + ((64 * 11) / 8);
 
